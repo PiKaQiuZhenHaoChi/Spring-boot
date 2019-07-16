@@ -47,3 +47,6 @@ target/
 
 # java
 *.classes
+
+# log
+logs/

@@ -1,0 +1,61 @@
+2019-07-16 17:43:37.904 [restartedMain] INFO  com.lanou3g.springboot_demo.SpringbootDemoApplication -
+                Starting SpringbootDemoApplication on John-PC with PID 3356 (D:\IdeaProjects\springboot_demo\target\classes started by John in D:\IdeaProjects\springboot_demo)
+2019-07-16 17:43:37.917 [restartedMain] INFO  com.lanou3g.springboot_demo.SpringbootDemoApplication -
+                No active profile set, falling back to default profiles: default
+2019-07-16 17:43:39.854 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-16 17:43:39.873 [restartedMain] INFO  org.apache.catalina.core.StandardService -
+                Starting service [Tomcat]
+2019-07-16 17:43:39.874 [restartedMain] INFO  org.apache.catalina.core.StandardEngine -
+                Starting Servlet Engine: Apache Tomcat/8.5.40
+2019-07-16 17:43:39.984 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2019-07-16 17:43:41.281 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8081"]
+2019-07-16 17:43:41.291 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool -
+                Using a shared selector for servlet write/read
+2019-07-16 17:43:41.311 [restartedMain] INFO  com.lanou3g.springboot_demo.initial.MyInitialization2 -
+                应用启动了，我准备初始化数据了
+2019-07-16 17:43:41.312 [restartedMain] INFO  com.lanou3g.springboot_demo.initial.MyInitialization -
+                应用启动了，我准备初始化数据了
+2019-07-16 17:43:41.313 [restartedMain] INFO  com.lanou3g.springboot_demo.SpringbootDemoApplication -
+                Started SpringbootDemoApplication in 3.847 seconds (JVM running for 5.051)
+2019-07-16 17:43:59.680 [http-nio-8081-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-07-16 17:44:17.583 [http-nio-8081-exec-4] INFO  com.lanou3g.springboot_demo.web.UploadController -
+                homeSource: D:\IdeaProjects\springboot_demo\target\classes
+2019-07-16 17:44:17.583 [http-nio-8081-exec-4] INFO  com.lanou3g.springboot_demo.web.UploadController -
+                homeDir: D:\IdeaProjects\springboot_demo\target\classes
+2019-07-16 17:44:17.584 [http-nio-8081-exec-4] INFO  com.lanou3g.springboot_demo.web.UploadController -
+                uploadPath: C:\Users\John\AppData\Local\Temp\tomcat-docbase.1604468380225777236.8081\upload
+2019-07-16 17:44:17.601 [http-nio-8081-exec-4] INFO  org.thymeleaf.TemplateEngine -
+                [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2019-07-16 17:44:17.641 [http-nio-8081-exec-4] INFO  org.thymeleaf.templateresolver.AbstractTemplateResolver -
+                [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+2019-07-16 17:44:17.641 [http-nio-8081-exec-4] INFO  org.thymeleaf.templateresolver.AbstractTemplateResolver -
+                [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2019-07-16 17:44:17.641 [http-nio-8081-exec-4] INFO  org.thymeleaf.messageresolver.AbstractMessageResolver -
+                [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2019-07-16 17:44:17.641 [http-nio-8081-exec-4] INFO  org.thymeleaf.messageresolver.AbstractMessageResolver -
+                [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2019-07-16 17:44:17.644 [http-nio-8081-exec-4] INFO  org.thymeleaf.TemplateEngine.CONFIG -
+                [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * XML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * XHTML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2019-07-16 17:44:17.644 [http-nio-8081-exec-4] INFO  org.thymeleaf.TemplateEngine -
+                [THYMELEAF] TEMPLATE ENGINE INITIALIZED

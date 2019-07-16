@@ -17,7 +17,26 @@ public class UploadController {
 	@RequestMapping("/upload")
 	public String upload(@RequestParam("myFile") MultipartFile file, HttpServletRequest req, Model model) {
 		try {
-			file.transferTo(new File("E:/" + file.getOriginalFilename()));
+			ApplicationHome home = new ApplicationHome(getClass());
+
+			// homeSource获取的路径是jar包的绝对路径(包括jar包名称)
+			// homeDir获取的路径是jar包所在目录的绝对路径(不包含jar包名称)
+			File homeSource = home.getSource();
+			File homeDir = home.getDir();
+			log.info("homeSource: " + homeSource);
+			log.info("homeDir: " + homeDir);
+
+			//在SpringBoot工程中不适合通过ServletContext.getRealPath("/upload");:
+			//uploadPath: C:\\Users\\John\\AppData\\Local\\Temp\\tomcat-docbase.11168215243077803.8081\\upload
+			//C:\\Users\\John\\AppData\\Local\\Temp\\tomcat-docbase.1305638418179073926.8081\\upload
+			/*File uploadPath = new File(req.getServletContext().getRealPath("/upload"));
+			*/
+			File uploadPath = new File(homeDir, "upload");
+			if(!uploadPath.exists()) {
+				uploadPath.mkdirs();
+			}
+			log.info("uploadPath: " + uploadPath);
+			file.transferTo(new File(uploadPath, file.getOriginalFilename()));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

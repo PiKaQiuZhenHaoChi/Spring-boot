@@ -8,10 +8,10 @@ server:
   port: 8081  #修改默认端口号
 
 spring:
-  mvc:
-    view:
-      prefix: /WEB-INF/ #配置JSP文件前缀
-      suffix: .jsp      #配置JSP页面后缀
+#  mvc:
+#    view:
+#      prefix: /WEB-INF/ #配置JSP文件前缀
+#      suffix: .jsp      #配置JSP页面后缀
 
   thymeleaf:  # thymeleaf与jsp使用一种就好，如果都配置上，默认使用thymeleaf
     cache: false  # 禁用页面缓存
