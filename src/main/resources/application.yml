@@ -1,0 +1,30 @@
+# SpringBoot支持properties、yml两种格式的配置文件
+# yml文件的特点是有层级结构，比如
+# server:
+#   port: 8081
+# 其实就相当于properties文件中定义server.port=8081
+
+server:
+  port: 8081  #修改默认端口号
+
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/ #配置JSP文件前缀
+      suffix: .jsp      #配置JSP页面后缀
+
+  thymeleaf:  # thymeleaf与jsp使用一种就好，如果都配置上，默认使用thymeleaf
+    cache: false  # 禁用页面缓存
+    mode: LEGACYHTML5 # 解决Thymeleaf模板代码中如果标签没有关闭报错问题
+    prefix: classpath:/templates/ #thymeleaf模板文件默认路径(如果一样，可以不配)
+    suffix: .html #thymeleaf模板文件默认后缀(如果一样，可以不配)
+  http:
+    multipart:  #配置文件上传参数
+      max-file-size: 200MB  #最大支持200MB的文件
+      max-request-size: 500MB #最大请求体大小500MB
+#  resources:
+#    static-locations: classpath:/static/,classpath:/css/
+logging:
+  level:
+    root: info
+    org.hibernate.validator.internal: ERROR
