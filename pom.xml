@@ -6,14 +6,13 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.21.RELEASE</version>
-        <!--<version>2.1.6.RELEASE</version>-->
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.lanou3g</groupId>
     <artifactId>springboot_demo</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>springboot_demo</name>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
     <description>springboot hello world</description>
 
     <properties>
@@ -47,10 +46,11 @@
         </dependency>
 
         <!--配置支持jsp（JSP和Thymeleaf都属于View层技术，二者二选其一）-->
-        <!--<dependency>
+        <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-jasper</artifactId>
-        </dependency>-->
+            <scope>provided</scope>
+        </dependency>
 
         <!-- thymeleaf模板引擎依赖 -->
         <dependency>

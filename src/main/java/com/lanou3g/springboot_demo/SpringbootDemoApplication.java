@@ -11,9 +11,13 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan("com.lanou3g")
+// Springboot中启动类上的@ComponentScan注解默认扫描当前包及子包中的类
+// 如果其他包中没有需要扫描的类，可以不写
+//@ComponentScan("com.lanou3g")
 public class SpringbootDemoApplication extends SpringBootServletInitializer {
 
+	// 将我们的SpringbootDemoApplication与原生Servlet容器(如：Tomcat)初始化流程挂上钩，
+	// 这样我们如果是打成war包放到外部Servlet容器中运行，就可以正常启动工程
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
 		return builder.sources(SpringbootDemoApplication.class);
