@@ -6,6 +6,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+/**
+ * 此类用于展示从配置中读取到的参数
+ * 配合profile测试
+ */
 @Controller
 public class ConfTestController {
 
