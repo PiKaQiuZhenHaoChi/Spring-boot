@@ -59,3 +59,93 @@
 [THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
 2019-07-16 17:44:17.644 [http-nio-8081-exec-4] INFO  org.thymeleaf.TemplateEngine -
                 [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2019-07-16 18:32:20.313 [restartedMain] INFO  com.lanou3g.springboot_demo.SpringbootDemoApplication -
+                Starting SpringbootDemoApplication on John-PC with PID 13540 (D:\IdeaProjects\springboot_demo\target\classes started by John in D:\IdeaProjects\springboot_demo)
+2019-07-16 18:32:20.316 [restartedMain] INFO  com.lanou3g.springboot_demo.SpringbootDemoApplication -
+                No active profile set, falling back to default profiles: default
+2019-07-16 18:32:21.669 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-16 18:32:21.699 [restartedMain] INFO  org.apache.catalina.core.StandardService -
+                Starting service [Tomcat]
+2019-07-16 18:32:21.699 [restartedMain] INFO  org.apache.catalina.core.StandardEngine -
+                Starting Servlet Engine: Apache Tomcat/8.5.40
+2019-07-16 18:32:21.947 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner -
+                At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-07-16 18:32:21.951 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2019-07-16 18:32:22.782 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8081"]
+2019-07-16 18:32:22.796 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool -
+                Using a shared selector for servlet write/read
+2019-07-16 18:32:22.816 [restartedMain] INFO  com.lanou3g.springboot_demo.initial.MyInitialization2 -
+                应用启动了，我准备初始化数据了
+2019-07-16 18:32:22.817 [restartedMain] INFO  com.lanou3g.springboot_demo.initial.MyInitialization -
+                应用启动了，我准备初始化数据了
+2019-07-16 18:32:22.818 [restartedMain] INFO  com.lanou3g.springboot_demo.SpringbootDemoApplication -
+                Started SpringbootDemoApplication in 2.862 seconds (JVM running for 4.05)
+2019-07-16 18:33:12.063 [http-nio-8081-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-07-16 18:33:12.109 [http-nio-8081-exec-1] INFO  com.lanou3g.springboot_demo.web.IndexController -
+                index
+2019-07-16 18:33:16.162 [http-nio-8081-exec-2] INFO  com.lanou3g.springboot_demo.web.IndexController -
+                index
+2019-07-16 18:36:46.435 [restartedMain] INFO  com.lanou3g.springboot_demo.SpringbootDemoApplication -
+                Starting SpringbootDemoApplication on John-PC with PID 11472 (D:\IdeaProjects\springboot_demo\target\classes started by John in D:\IdeaProjects\springboot_demo)
+2019-07-16 18:36:46.440 [restartedMain] INFO  com.lanou3g.springboot_demo.SpringbootDemoApplication -
+                No active profile set, falling back to default profiles: default
+2019-07-16 18:36:47.792 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-16 18:36:47.809 [restartedMain] INFO  org.apache.catalina.core.StandardService -
+                Starting service [Tomcat]
+2019-07-16 18:36:47.809 [restartedMain] INFO  org.apache.catalina.core.StandardEngine -
+                Starting Servlet Engine: Apache Tomcat/8.5.40
+2019-07-16 18:36:48.038 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner -
+                At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-07-16 18:36:48.043 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2019-07-16 18:36:48.891 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8081"]
+2019-07-16 18:36:48.901 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool -
+                Using a shared selector for servlet write/read
+2019-07-16 18:36:48.921 [restartedMain] INFO  com.lanou3g.springboot_demo.initial.MyInitialization2 -
+                应用启动了，我准备初始化数据了
+2019-07-16 18:36:48.921 [restartedMain] INFO  com.lanou3g.springboot_demo.initial.MyInitialization -
+                应用启动了，我准备初始化数据了
+2019-07-16 18:36:48.922 [restartedMain] INFO  com.lanou3g.springboot_demo.SpringbootDemoApplication -
+                Started SpringbootDemoApplication in 2.864 seconds (JVM running for 4.207)
+2019-07-16 18:37:02.190 [http-nio-8081-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-07-16 18:37:02.246 [http-nio-8081-exec-1] INFO  com.lanou3g.springboot_demo.web.IndexController -
+                index
+2019-07-16 18:37:03.867 [http-nio-8081-exec-3] INFO  com.lanou3g.springboot_demo.web.IndexController -
+                index
+2019-07-16 18:37:18.853 [http-nio-8081-exec-6] INFO  com.lanou3g.springboot_demo.web.IndexController -
+                index
+2019-07-16 18:37:32.187 [restartedMain] INFO  com.lanou3g.springboot_demo.SpringbootDemoApplication -
+                Starting SpringbootDemoApplication on John-PC with PID 9340 (D:\IdeaProjects\springboot_demo\target\classes started by John in D:\IdeaProjects\springboot_demo)
+2019-07-16 18:37:32.191 [restartedMain] INFO  com.lanou3g.springboot_demo.SpringbootDemoApplication -
+                No active profile set, falling back to default profiles: default
+2019-07-16 18:37:34.060 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8081"]
+2019-07-16 18:37:34.087 [restartedMain] INFO  org.apache.catalina.core.StandardService -
+                Starting service [Tomcat]
+2019-07-16 18:37:34.088 [restartedMain] INFO  org.apache.catalina.core.StandardEngine -
+                Starting Servlet Engine: Apache Tomcat/8.5.40
+2019-07-16 18:37:34.375 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner -
+                At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-07-16 18:37:34.379 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2019-07-16 18:37:35.600 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8081"]
+2019-07-16 18:37:35.610 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool -
+                Using a shared selector for servlet write/read
+2019-07-16 18:37:35.634 [restartedMain] INFO  com.lanou3g.springboot_demo.initial.MyInitialization2 -
+                应用启动了，我准备初始化数据了
+2019-07-16 18:37:35.635 [restartedMain] INFO  com.lanou3g.springboot_demo.initial.MyInitialization -
+                应用启动了，我准备初始化数据了
+2019-07-16 18:37:35.637 [restartedMain] INFO  com.lanou3g.springboot_demo.SpringbootDemoApplication -
+                Started SpringbootDemoApplication in 3.964 seconds (JVM running for 5.466)
+2019-07-16 18:37:43.233 [http-nio-8081-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] -
+                Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-07-16 18:38:47.377 [http-nio-8081-exec-1] INFO  com.lanou3g.springboot_demo.web.IndexController -
+                index

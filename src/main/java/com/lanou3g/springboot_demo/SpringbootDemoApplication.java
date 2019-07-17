@@ -8,7 +8,6 @@ import org.springframework.boot.context.embedded.tomcat.TomcatConnectorCustomize
 import org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 // Springboot中启动类上的@ComponentScan注解默认扫描当前包及子包中的类
@@ -53,7 +52,6 @@ public class SpringbootDemoApplication extends SpringBootServletInitializer {
 		});
 		return tomcatFactory;
 	}
-
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootDemoApplication.class, args);
 	}
