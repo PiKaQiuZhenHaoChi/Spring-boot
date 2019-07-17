@@ -28,7 +28,7 @@ public class SpringbootDemoApplicationTests {
 	@Test
 	public void testReadConf() {
 		Assert.assertEquals("雲杰不是已经34了吗？", 34, student.getYunJieAge());
-		Assert.assertEquals("赛赛不是已经168了吗？", 16, student.getSaisaiAge());
+		Assert.assertEquals("赛赛不是已经168了吗？", 168, student.getSaisaiAge());
 	}
 
 	@Test

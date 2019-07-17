@@ -12,7 +12,7 @@
     <artifactId>springboot_demo</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>springboot_demo</name>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <description>springboot hello world</description>
 
     <properties>
@@ -67,11 +67,11 @@
 
         <!-- 当把工程打包成war包，放到外部tomcat中运行时，需要添加 -->
         <!-- 排除SpringBoot内嵌的Tomcat相关jar包，避免与外部Tomcat中的jar包冲突 -->
-        <dependency>
+        <!--<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-tomcat</artifactId>
             <scope>provided</scope>
-        </dependency>
+        </dependency>-->
 
         <dependency>
             <groupId>mysql</groupId>
@@ -82,8 +82,37 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jdbc</artifactId>
         </dependency>
-
     </dependencies>
+
+    <!-- 配置maven打包时-P参数支持哪些profile -->
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <!-- properties -->
+            <properties>
+                <profileName>dev</profileName>
+                <!-- 这里可以定义多个参数，标签的名字就对应properties文件中的key
+                    比如：<profileName>在配置文件中写成@profileName@
+                 -->
+            </properties>
+            <!-- 如果打包时没有指定-P参数，默认使用activeByDefault为true的profile -->
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+        <profile>
+            <id>test</id>
+            <properties>
+                <profileName>test</profileName>
+            </properties>
+        </profile>
+        <profile>
+            <id>product</id>
+            <properties>
+                <profileName>product</profileName>
+            </properties>
+        </profile>
+    </profiles>
 
     <build>
         <plugins>
@@ -92,6 +121,23 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <fork>true</fork>
+                </configuration>
+            </plugin>
+            <!-- maven resource插件：
+                功能：主要是操作配置文件相关。
+                比如用maven中的变量替换项目中配置文件中的占位符
+                显示指定非maven标准resources目录为resources
+             -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.7</version>
+                <configuration>
+                    <!-- 指定配置文件中的占位符是@ -->
+                    <delimiters>
+                        <delimiter>@</delimiter>
+                    </delimiters>
+                    <useDefaultDelimiters>false</useDefaultDelimiters>
                 </configuration>
             </plugin>
         </plugins>
